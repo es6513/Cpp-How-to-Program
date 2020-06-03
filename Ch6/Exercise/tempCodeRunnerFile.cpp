@@ -1,4 +1,1 @@
- int seed;
-  cout << "Enter seed: ";
-  cin >> seed;
-  srand(seed);
+  cout<< num << " isPrime " <<boolalpha << isPrime(num);

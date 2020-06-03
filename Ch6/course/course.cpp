@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <typeinfo>
 
 using namespace std;
 
@@ -11,14 +12,22 @@ int fibonacci(int);
 
 
 int main(){
-  // for (int x = 0; x < 10;x++){
-  //   cout << square(x)<<" ";
-  // }
-  // cout << square(5.63) << endl;
-  // cout << maximum(4, 5, 6);
+int x, y=3, z=5;
 
-  cout<<fibonacci(6);
-  return 0;
+double a = 1.0, b = 5.8;
+
+x = a + b;
+
+cout << x << endl;
+cout << typeid(x).name();
+// for (int x = 0; x < 10;x++){
+//   cout << square(x)<<" ";
+// }
+// cout << square(5.63) << endl;
+// cout << maximum(4, 5, 6);
+
+// cout<<fibonacci(6);
+return 0;
 }
 
 int square (int y) {
