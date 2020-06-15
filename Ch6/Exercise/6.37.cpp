@@ -9,7 +9,7 @@ int main(){
 
 //non recursive Fibonacci
 
-cout<<Fibonacci(7)<<endl;
+cout<<Fibonacci(3)<<endl;
 
     return 0;
 }
