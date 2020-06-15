@@ -1,33 +1,39 @@
 
+
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
-int GCD(int n1, int n2);
+int flip();
 
+int main(){
+    int tailNum =0;
+    int headNum = 0;
+    srand(time(0));
 
-int main()
-{
+    for(int i=0;i<1000;i++) {
+        if(flip()==0) {
+            cout<<"Tail"<<endl;
+            tailNum++;  
+        }else{
+            cout<<"Head"<<endl;
+            headNum++;
+        }
+    }
+    cout<<"Total tail :"<<tailNum<<endl;
+    cout<<"Total head :"<<headNum<<endl;
 
-  int num1, num2;
-
-  cin >> num1 >> num2;
-
-  cout << GCD(num1, num2);
-  return 0;
+    return 0;
 }
 
-int GCD(int n1,int n2){
+int flip(){
 
+    // for(int i=0;i<10;i++)
+        // cout<<rand()<<endl;
+   
 
-if(n2) 
-while((n1%=n2)&&(n2%=n1)){
-    cout <<"n1 "<< n1<<endl;
-    cout <<"n2 "<< n2<<endl;
-}
-
-
-return n1 + n2;
-
-// return n1 % n2 == 0 ? n2 : GCD(n2, n1 % n2);
+   return rand()%2;
 }
