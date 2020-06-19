@@ -33,7 +33,7 @@ int b[5] = {0, 1, 2, 3};
 
 //int b[5] = {}, 會全部都是0
 //int b[] 不行,不知道一次要幾個
-//int b[] = {1,2,3,4} 可以, 等同於 int[4] = {1,2,3,4}
+//int b[] = {1,2,3,4} 可以, 等同於 int b[4] = {1,2,3,4}
 //若初始化個數不足會補0
 
 // cout << b[3];
@@ -60,13 +60,10 @@ cout << a[1][2]<<endl ;
 cout << d[1][1]<<endl ;
 
 cout << e[1][2] << endl; //0
+cout << e[1][1] << endl; //3
+
 
 // |_
 
 return 0;
-}
-
-void testExternStorage(){
-
-  extern int test = 121333;
 }
