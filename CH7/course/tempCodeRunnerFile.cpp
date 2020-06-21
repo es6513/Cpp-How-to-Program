@@ -1,2 +1,6 @@
-cout << b[3];
-// cout << b[4];
+    for (int j = i-1; j >= 0;j--){
+      if(data[j]>insert){
+        data[j + 1] = data[j];
+        data[j] = insert;
+      }
+    }
